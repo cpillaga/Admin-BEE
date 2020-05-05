@@ -30,6 +30,9 @@ export class HomeComponent implements OnInit {
 
   }
 
+  /*=========================
+  Aqui se supone que que quiero actualizar la data en el div del html
+  =========================*/
   updateSol(){
     this.solPendientes = this._webSocket.socketSol();
   }

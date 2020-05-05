@@ -19,6 +19,9 @@ export class WebSocketService {
   }
 
 
+/*=========================
+Aqui estoy recibiendo la data del servidor
+========================= */ 
   socketSol(){
     this.socket.on('sendMensaje', (resp) =>{
       this.solPendientes = this._solServer.crearArreglo(resp);
@@ -27,7 +30,6 @@ export class WebSocketService {
     console.log(this.solPendientes);
     return this.solPendientes;
   }
-
 
   checkStatus(){
     this.socket.on('connect', () => {

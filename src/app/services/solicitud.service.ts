@@ -17,6 +17,9 @@ export class SolicitudService {
 
   }
 
+  /*=========================
+    Aquí obtengo los valores de la Base de Datos
+  =========================*/ 
   obtenerSolicitud( ) {
     let url = URL_SERVICE.url + '/solicitud';
 
@@ -26,6 +29,9 @@ export class SolicitudService {
         );
   }
 
+  /*=========================
+    Aquí creo un arreglo de la Base de datos y del socket
+  =========================*/
   crearArreglo ( solicitudObj: object){
 
     const solicitud: Solicitud[] = [];
