@@ -19,7 +19,7 @@ export class UsuarioService{
             localStorage.removeItem('email');
         }
         
-        const url = URL_SERVICE.url + '/login';
+        const url = 'https://bee.com.ec/administrator/login';
 
         return this.http.post( url, usuario )
                     .map( (resp: any) => {
