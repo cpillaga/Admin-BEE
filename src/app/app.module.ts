@@ -15,10 +15,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { UsuarioService } from './services/usuario.service';
 import { URL_SERVICE } from './config/config';
-import { WebSocketService } from '../../../FORMS/src/app/services/websocket.service';
 
 const config: SocketIoConfig = { url: URL_SERVICE.url, options: {} };
-
 
 @NgModule({
   declarations: [
@@ -33,7 +31,7 @@ const config: SocketIoConfig = { url: URL_SERVICE.url, options: {} };
     ReactiveFormsModule,
     HttpClientModule,
     PagesModule,
-    SocketIoModule.forRoot(config)
+    SocketIoModule.forRoot(config),
   ],
   providers: [
     UsuarioService

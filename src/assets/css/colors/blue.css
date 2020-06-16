@@ -272,11 +272,11 @@ a.link:focus {
 
 .stylish-table tbody tr:hover,
 .stylish-table tbody tr.active {
-    border-left: 4px solid #009efb;
+    border-left: 4px solid #000000;
 }
 
 .text-themecolor {
-    color: #009efb !important;
+    color: #000000 !important;
 }
 
 .profile-tab li a.nav-link.active,
@@ -322,17 +322,17 @@ a.link:focus {
 *******************/
 
 .sidebar-nav {
-    background: #000000;
+    background: #ffffff;
 }
 
 .sidebar-nav ul li a {
     /* color: #607d8b; */
-    color: #fff;
+    color: #6c757d;
 }
 
 .sidebar-nav ul li a.active,
 .sidebar-nav ul li a:hover {
-    color: #26c6da;
+    color: #ffbf00;
 }
 
 .sidebar-nav ul li a.active {
@@ -340,12 +340,14 @@ a.link:focus {
 }
 
 .sidebar-nav ul li.nav-small-cap {
-    color: #99abb4;
+    /* color: #99abb4; */
+    color: black;
+    background-color: #99abb4;
 }
 
 .sidebar-nav>ul>li>a.active i,
 .sidebar-nav>ul>li>a:hover i {
-    color: #26c6da;
+    color: #ffbf00;
 }
 
 .sidebar-nav>ul>li>a i {
@@ -361,7 +363,7 @@ a.link:focus {
 .sidebar-nav>ul>li.active>a,
 .sidebar-nav>ul>li.active:hover>a {
     color: #fff;
-    background: #26c6da !important;
+    background: #ffbf00 !important;
 }
 
 .sidebar-nav>ul>li.active>a i,

@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     public _solicitudServicio: SolicitudService,
     public _webSocket: WebSocketService
   ) { }
-  
+
   ngOnInit() {
     this._solicitudServicio.obtenerSolicitud()
       .subscribe( resp =>  {
@@ -35,5 +35,7 @@ export class HomeComponent implements OnInit {
   =========================*/
   updateSol(){
     this.solPendientes = this._webSocket.socketSol();
+
+    this.ngOnInit();
   }
 }

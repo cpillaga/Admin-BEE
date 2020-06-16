@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Solicitud } from '../models/solicitud/solicitud.model';
 import { URL_SERVICE } from '../config/config';
-import swal from 'sweetalert';
 import { map } from 'rxjs/operators';
 
 
